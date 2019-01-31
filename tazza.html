@@ -17,11 +17,17 @@
 		<a-anchor hit-testing-enabled='true'>
 
 			<!-- Add your augmented reality here -->
-			a-assets>
+<!--			a-assets>
     <a-asset-item id="tazza" src="tazza3.dae"></a-asset-item>
   </a-assets>
 
-  <a-entity collada-model="#tazza"></a-entity>
+  <a-entity collada-model="#tazza"></a-entity> -->
+			  <a-assets>
+    <a-asset-item id="tazza-obj" src="tazza3.obj"></a-asset-item>
+    <a-asset-item id="tazza-mtl" src="tazza3.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity obj-model="obj: #tazza-obj; mtl: #tazza-mtl"></a-entity>
 
 		</a-anchor>
 
