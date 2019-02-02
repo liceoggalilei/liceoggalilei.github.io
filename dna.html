@@ -30,9 +30,7 @@
 
   <a-entity obj-model="obj: #tazza-obj; mtl: #tazza-mtl"></a-entity>  -->
 
-<a-entity obj-model="obj: url(DNA4.obj); mtl: url(DNA4.mtl)">
-	<a-animation attribute="rotation" to="0 360 0" dur="5000" easing='linear' repeat="indefinite"></a-animation>
-</a-entity>
+
 
 		</a-anchor>
 
@@ -40,7 +38,12 @@
 <!--<a-camera-static> </a-camera-static>  
 		 <a-marker-camera preset='hiro'></a-marker-camera>-->
 <a-marker-camera type='pattern' patternUrl='dna-marker.patt'></a-marker-camera>
-<a-marker type='pattern' patternUrl='dna-marker.patt'></a-marker>
+<a-marker type='pattern' patternUrl='dna-marker.patt'>
+	<a-entity obj-model="obj: url(DNA4.obj); mtl: url(DNA4.mtl)">
+	<a-animation attribute="rotation" to="0 360 0" dur="5000" easing='linear' repeat="indefinite"></a-animation>
+</a-entity>
+	
+	</a-marker>
 
 	</a-scene>
 </body>
